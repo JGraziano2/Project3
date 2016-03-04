@@ -1,5 +1,9 @@
 /**
  *
+ *	Edited By: Jacobi Graziano
+ *	Edit Date: 3/3/16
+ *	Changes: Added render of statusEditor and saving of the value of the drop down to the status property
+ *
  * Note Edit View
  *
  * noteEditView.js
@@ -66,7 +70,7 @@ define( [ "yasmf", "app/models/noteStorageSingleton",
      */
     self.saveNote = function() {
       self._note.name = self._nameEditor.innerText;
-	  self._note.status = self._statusEditor.value;
+	  self._note.status = self._statusEditor.value;  // Save the value of the drop down selection as the status property to display.
       self._note.textContents = self._contentsEditor.value;
       noteStorageSingleton.saveNote( self._note );
     };

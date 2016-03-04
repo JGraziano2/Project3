@@ -130,7 +130,7 @@ define( [ "yasmf" ], function( _y ) {
 	/* 
 		Sets up status object for the display of status
 	*/
-	self._status = "Test";
+	self._status = "";
 	self.getStatus = function() {
 		return self._status;
 	};
