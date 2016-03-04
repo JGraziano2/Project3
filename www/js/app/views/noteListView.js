@@ -1,4 +1,7 @@
 /**
+ *	Edited By: Jacobi Graziano
+ *	Edit Date: 3/3/16
+ *	Changes: Added status display pointer
  *
  * Note List View
  *

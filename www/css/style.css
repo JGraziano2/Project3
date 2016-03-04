@@ -1,4 +1,8 @@
 /**
+ * Editied by: Jacobi Graziano
+ * Edit date: 3/3/16
+ * Changes: Added styling for status area on note view.
+ *
  * Filer v4 Styles
  *
  * @author Kerri Shotts
@@ -228,7 +232,7 @@ body.android {
   color: #606060;
 }
 
-/* Status styling */
+/* position and style for status area*/
 .android .noteListView .ui-list-item .note-status {
   	font-size: 16px;
 	line-height: 20px;

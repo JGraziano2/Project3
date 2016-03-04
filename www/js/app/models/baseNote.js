@@ -1,4 +1,7 @@
 /**
+ *	Edited By: Jacobi Graziano
+ *	Edit Date: 3/3/16
+ *	Changes: Added creation of status object property
  *
  * Base Note Model
  *
@@ -125,7 +128,7 @@ define( [ "yasmf" ], function( _y ) {
       configurable: true
     } );
 	/* 
-		Status attempt
+		Sets up status object for the display of status
 	*/
 	self._status = "Test";
 	self.getStatus = function() {
@@ -243,6 +246,7 @@ define( [ "yasmf" ], function( _y ) {
         "createdDate": self.createdDate,
         "modifiedDate": self.modifiedDate,
         "name": self.name,
+		"status": self.status,  
         "textContents": self.textContents,
         "mediaContents": self.mediaContents,
         "unitValue": self.unitValue,
@@ -265,6 +269,7 @@ define( [ "yasmf" ], function( _y ) {
         self.uid = aNote.uid;
         self._createdDate = new Date( aNote.createdDate );
         self.name = aNote.name;
+		self.status = aNote.status;
         self.textContents = aNote.textContents;
         self.mediaContents = aNote.mediaContents;
         self.unitValue = aNote.unitValue; // so we don't have to recalc it
